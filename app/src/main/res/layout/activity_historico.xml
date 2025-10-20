@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_pao"
+    android:padding="16dp">
+
+    <!-- Cabeçalho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/header_background">
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:text="◀ Voltar"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_background"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Histórico Mensal"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Card de resumo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo do Mês Atual"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:background="@drawable/subtitle_background"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvMesAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carregando..."
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_background"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvValorMesAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/value_background"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- Título do histórico anterior -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Histórico Anterior"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/section_background"
+        android:padding="12dp"
+        android:gravity="center" />
+
+    <!-- Lista de histórico -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_background"
+        android:elevation="4dp" />
+
+</LinearLayout>

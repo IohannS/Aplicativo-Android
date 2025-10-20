@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#CCFFFFFF"
+    android:layout_margin="8dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Produto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantidade:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Preço unitário:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrecoUnitario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00" />
+    </LinearLayout>
+
+    <!-- Valor total por produto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor total:"
+            android:textStyle="bold"
+            android:textColor="#1B5E20" />
+
+        <TextView
+            android:id="@+id/tvValorTotalProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00"
+            android:textStyle="bold"
+            android:textColor="#1B5E20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Categoria:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+    <!-- Botões -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAumentar"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="+1"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            android:background="#1B5E20"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDiminuir"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="-1"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:background="#B71C1C"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Deletar"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:background="#E65100"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

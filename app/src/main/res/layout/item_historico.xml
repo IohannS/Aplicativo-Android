@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_background"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tvMesAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mês/Ano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1" />
+
+    <TextView
+        android:id="@+id/tvDataRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 0,00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvQuantidadeProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 produtos"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema AppCompat básico e compatível -->
+    <style name="Theme.MercadinhoEstoque" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#03DAC6</item>
+
+        <!-- Customize your theme here -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+</resources>
