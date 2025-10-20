@@ -1,6 +1,6 @@
 # Mercadinho Estoque 📱🛒
 
-Aplicativo Android para controle de estoque e histórico mensal de um mercadinho.
+Aplicativo feito para um trabalho de faculdade, onde pode-se ter o controle de estoque de um mini-mercadinho
 
 ## Funcionalidades
 - ✅ Cadastro de produtos
